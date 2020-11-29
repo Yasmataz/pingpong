@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/xst"
+elaborate
+-ifn RGBGen.prj
+-ifmt mixed

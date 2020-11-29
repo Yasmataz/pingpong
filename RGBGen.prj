@@ -1,0 +1,3 @@
+vhdl work "VGAController.vhd"
+vhdl work "refreshClk.vhd"
+vhdl work "RGBGen.vhd"

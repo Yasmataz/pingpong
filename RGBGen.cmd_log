@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.xst" -ofn "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 RGBGen.ngc RGBGen.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o RGBGen_map.ncd RGBGen.ngd RGBGen.pcf 
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o RGBGen_map.ncd RGBGen.ngd RGBGen.pcf 
+xst -intstyle ise -ifn "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.xst" -ofn "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 RGBGen.ngc RGBGen.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o RGBGen_map.ncd RGBGen.ngd RGBGen.pcf 
+xst -intstyle ise -ifn "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.xst" -ofn "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGBGen.ucf -p xc3s500e-fg320-5 RGBGen.ngc RGBGen.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc RGBGen.ucf -p xc3s500e-fg320-5 RGBGen.ngc RGBGen.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o RGBGen_map.ncd RGBGen.ngd RGBGen.pcf 
+par -w -intstyle ise -ol high -t 1 RGBGen_map.ncd RGBGen.ncd RGBGen.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml RGBGen.twx RGBGen.ncd -o RGBGen.twr RGBGen.pcf -ucf RGBGen.ucf 

@@ -1,0 +1,4 @@
+vhdl isim_temp "VGAController.vhd"
+vhdl isim_temp "refreshClk.vhd"
+vhdl isim_temp "RGBGen.vhd"
+vhdl isim_temp "RGB_test.vhd"

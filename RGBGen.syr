@@ -1,0 +1,506 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: RGBGen.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RGBGen.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RGBGen"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : RGBGen
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd" in Library work.
+Architecture behavioral of Entity vgacontroller is up to date.
+Compiling vhdl file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd" in Library work.
+Architecture behavioral of Entity refreshclk is up to date.
+Compiling vhdl file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.vhd" in Library work.
+Architecture behavioral of Entity rgbgen is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <RGBGen> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <VGAController> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <refreshClk> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <RGBGen> in library <work> (Architecture <behavioral>).
+Entity <RGBGen> analyzed. Unit <RGBGen> generated.
+
+Analyzing Entity <VGAController> in library <work> (Architecture <behavioral>).
+Entity <VGAController> analyzed. Unit <VGAController> generated.
+
+Analyzing Entity <refreshClk> in library <work> (Architecture <behavioral>).
+Entity <refreshClk> analyzed. Unit <refreshClk> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <VGAController>.
+    Related source file is "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd".
+    Found 32-bit up counter for signal <hcount_s>.
+    Found 1-bit register for signal <hsync_s>.
+    Found 32-bit comparator less for signal <hsync_s$cmp_lt0000> created at line 69.
+    Found 32-bit up counter for signal <vcount_s>.
+    Found 1-bit register for signal <vsync_s>.
+    Found 32-bit comparator less for signal <vsync_s$cmp_lt0000> created at line 75.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <VGAController> synthesized.
+
+
+Synthesizing Unit <refreshClk>.
+    Related source file is "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd".
+    Found 1-bit register for signal <refresh_clk>.
+    Found 32-bit up counter for signal <refreshcnt>.
+    Found 32-bit comparator greatequal for signal <refreshcnt$cmp_ge0000> created at line 47.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <refreshClk> synthesized.
+
+
+Synthesizing Unit <RGBGen>.
+    Related source file is "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.vhd".
+WARNING:Xst:647 - Input <SW> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <v4_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000101010100.
+WARNING:Xst:653 - Signal <v4_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000110101110.
+WARNING:Xst:653 - Signal <v4_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001100001.
+WARNING:Xst:653 - Signal <v4_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001001110.
+WARNING:Xst:653 - Signal <v3_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000010001100.
+WARNING:Xst:653 - Signal <v3_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000110010.
+WARNING:Xst:653 - Signal <v3_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001100001.
+WARNING:Xst:653 - Signal <v3_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001001110.
+WARNING:Xst:653 - Signal <v2_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000101010100.
+WARNING:Xst:653 - Signal <v2_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000110101110.
+WARNING:Xst:653 - Signal <v2_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000110010.
+WARNING:Xst:653 - Signal <v2_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000011110.
+WARNING:Xst:653 - Signal <v1_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000010001100.
+WARNING:Xst:653 - Signal <v1_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000110010.
+WARNING:Xst:653 - Signal <v1_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000110010.
+WARNING:Xst:653 - Signal <v1_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000011110.
+WARNING:Xst:646 - Signal <rcount_s> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rclk_s> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <p2_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <p2_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <p2_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <p2_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <p1_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <p1_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <p1_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <p1_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <mf_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000111000010.
+WARNING:Xst:653 - Signal <mf_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000011110.
+WARNING:Xst:653 - Signal <mf_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000101000001.
+WARNING:Xst:653 - Signal <mf_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000100111111.
+WARNING:Xst:653 - Signal <h2_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000110101101.
+WARNING:Xst:653 - Signal <h2_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000111000010.
+WARNING:Xst:653 - Signal <h2_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001100010.
+WARNING:Xst:653 - Signal <h2_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000011110.
+WARNING:Xst:653 - Signal <h1_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000110001.
+WARNING:Xst:653 - Signal <h1_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000011110.
+WARNING:Xst:653 - Signal <h1_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001100010.
+WARNING:Xst:653 - Signal <h1_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000011110.
+WARNING:Xst:653 - Signal <ball_y2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <ball_y1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <ball_x2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:653 - Signal <ball_x1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+    Found 1-bit register for signal <vsync>.
+    Found 1-bit register for signal <hsync>.
+    Found 32-bit register for signal <vcount>.
+    Found 32-bit register for signal <hcount>.
+    Found 8-bit register for signal <R>.
+    Found 8-bit register for signal <G>.
+    Found 8-bit register for signal <B>.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0000> created at line 152.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0001> created at line 152.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0002> created at line 178.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0003> created at line 178.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0004> created at line 159.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0005> created at line 159.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0006> created at line 159.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0007> created at line 159.
+    Found 32-bit comparator greatequal for signal <B$cmp_ge0008> created at line 159.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0000> created at line 152.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0001> created at line 152.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0002> created at line 178.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0003> created at line 178.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0004> created at line 159.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0005> created at line 159.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0006> created at line 159.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0007> created at line 159.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0008> created at line 159.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0009> created at line 159.
+    Found 32-bit comparator lessequal for signal <B$cmp_le0010> created at line 159.
+    Found 32-bit comparator greatequal for signal <G$cmp_ge0000> created at line 181.
+    Found 32-bit comparator greatequal for signal <G$cmp_ge0001> created at line 181.
+    Found 32-bit comparator greatequal for signal <G$cmp_ge0002> created at line 187.
+    Found 32-bit comparator greatequal for signal <G$cmp_ge0003> created at line 187.
+    Found 32-bit comparator greater for signal <G$cmp_gt0000> created at line 152.
+    Found 32-bit comparator greater for signal <G$cmp_gt0001> created at line 152.
+    Found 32-bit comparator lessequal for signal <G$cmp_le0000> created at line 181.
+    Found 32-bit comparator lessequal for signal <G$cmp_le0001> created at line 181.
+    Found 32-bit comparator lessequal for signal <G$cmp_le0002> created at line 187.
+    Found 32-bit comparator lessequal for signal <G$cmp_le0003> created at line 187.
+    Found 32-bit comparator less for signal <G$cmp_lt0000> created at line 152.
+    Found 32-bit comparator less for signal <G$cmp_lt0001> created at line 152.
+    Found 10-bit register for signal <x>.
+    Found 10-bit subtractor for signal <x$sub0000> created at line 148.
+    Found 9-bit register for signal <y>.
+    Found 9-bit subtractor for signal <y$sub0000> created at line 149.
+    Summary:
+	inferred 109 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Comparator(s).
+Unit <RGBGen> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <myRefreshClk> of the block <refreshClk> are unconnected in block <RGBGen>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 10-bit subtractor                                     : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 11
+ 1-bit register                                        : 4
+ 10-bit register                                       : 1
+ 32-bit register                                       : 2
+ 8-bit register                                        : 3
+ 9-bit register                                        : 1
+# Comparators                                          : 34
+ 32-bit comparator greatequal                          : 13
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 4
+ 32-bit comparator lessequal                           : 15
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 10-bit subtractor                                     : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 111
+ Flip-Flops                                            : 111
+# Comparators                                          : 34
+ 32-bit comparator greatequal                          : 13
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 4
+ 32-bit comparator lessequal                           : 15
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <B_0> in Unit <RGBGen> is equivalent to the following 7 FFs/Latches, which will be removed : <B_1> <B_2> <B_3> <B_4> <B_5> <B_6> <B_7> 
+INFO:Xst:2261 - The FF/Latch <G_0> in Unit <RGBGen> is equivalent to the following 7 FFs/Latches, which will be removed : <G_1> <G_2> <G_3> <G_4> <G_5> <G_6> <G_7> 
+INFO:Xst:2261 - The FF/Latch <R_0> in Unit <RGBGen> is equivalent to the following 7 FFs/Latches, which will be removed : <R_1> <R_2> <R_3> <R_4> <R_5> <R_6> <R_7> 
+INFO:Xst:2261 - The FF/Latch <y_0> in Unit <RGBGen> is equivalent to the following FF/Latch, which will be removed : <vcount_0> 
+
+Optimizing unit <RGBGen> ...
+INFO:Xst:2261 - The FF/Latch <R_0> in Unit <RGBGen> is equivalent to the following FF/Latch, which will be removed : <G_0> 
+INFO:Xst:2261 - The FF/Latch <R_0> in Unit <RGBGen> is equivalent to the following FF/Latch, which will be removed : <G_0> 
+
+Optimizing unit <VGAController> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block RGBGen, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 152
+ Flip-Flops                                            : 152
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : RGBGen.ngr
+Top Level Output File Name         : RGBGen
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 95
+
+Cell Usage :
+# BELS                             : 437
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 73
+#      LUT2                        : 8
+#      LUT2_L                      : 1
+#      LUT3                        : 12
+#      LUT3_D                      : 6
+#      LUT3_L                      : 4
+#      LUT4                        : 82
+#      LUT4_D                      : 1
+#      LUT4_L                      : 5
+#      MUXCY                       : 147
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 74
+# FlipFlops/Latches                : 152
+#      FD                          : 83
+#      FDR                         : 35
+#      FDRE                        : 32
+#      FDRSE                       : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 90
+#      OBUF                        : 90
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      146  out of   4656     3%  
+ Number of Slice Flip Flops:            152  out of   9312     1%  
+ Number of 4 input LUTs:                210  out of   9312     2%  
+ Number of IOs:                          95
+ Number of bonded IOBs:                  91  out of    232    39%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 152   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.511ns (Maximum Frequency: 153.580MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.562ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.511ns (frequency: 153.580MHz)
+  Total number of paths / destination ports: 4914 / 253
+-------------------------------------------------------------------------
+Delay:               6.511ns (Levels of Logic = 5)
+  Source:            y_0 (FF)
+  Destination:       R_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: y_0 to R_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.514   0.651  y_0 (y_0)
+     LUT4:I0->O            1   0.612   0.387  B_cmp_le000321_SW0 (N29)
+     LUT4:I2->O            3   0.612   0.454  B_cmp_le000321 (B_cmp_le0003)
+     LUT4:I3->O            4   0.612   0.502  B_or00001 (B_or0001)
+     LUT4_L:I3->LO         1   0.612   0.103  B_or0002395_SW0 (N21)
+     LUT4:I3->O            1   0.612   0.357  G_not00031 (G_not0003)
+     FDRSE:CE                  0.483          R_0
+    ----------------------------------------
+    Total                      6.511ns (4.057ns logic, 2.454ns route)
+                                       (62.3% logic, 37.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 90 / 90
+-------------------------------------------------------------------------
+Offset:              4.562ns (Levels of Logic = 1)
+  Source:            R_0 (FF)
+  Destination:       G<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: R_0 to G<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRSE:C->Q           16   0.514   0.879  R_0 (R_0)
+     OBUF:I->O                 3.169          G_7_OBUF (G<7>)
+    ----------------------------------------
+    Total                      4.562ns (3.683ns logic, 0.879ns route)
+                                       (80.7% logic, 19.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.83 secs
+ 
+--> 
+
+Total memory usage is 4508160 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

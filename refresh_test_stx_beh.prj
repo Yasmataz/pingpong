@@ -1,0 +1,2 @@
+vhdl isim_temp "refreshClk.vhd"
+vhdl isim_temp "refresh_test.vhd"
