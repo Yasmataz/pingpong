@@ -20,6 +20,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all;
+USE ieee.numeric_std.ALL;
+
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -28,67 +30,60 @@ use ieee.std_logic_unsigned.all;
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
---use UNISIM.VComponents.all;
+--use UNISIM.VComponents.all
 
 entity VGAController is
 	port (
 		clk : in std_logic;
-		vsync : out std_logic;
+		vsync: out std_logic;
 		hsync : out std_logic;
-		vcount : out integer;
-		hcount : out integer
+		vcount : out std_logic_vector(9 downto 0);
+		hcount : out std_logic_vector(9 downto 0)
 		);
 		
 end VGAController;
 
 architecture Behavioral of VGAController is
-
-
-	signal hcount_s : integer := 0;
-	signal vcount_s : integer := 0;	
-	signal hsync_s : std_logic;
-	signal vsync_s : std_logic;	
+	
+	signal vcount_s : std_logic_vector(9 downto 0) := "0000000000";
+	signal hcount_s : std_logic_vector(9 downto 0) := "0000000000";	
+	signal hsync_s : std_logic := '1';
+	signal vsync_s : std_logic := '1';	
+	
 begin 
 process (clk)
 	begin
 		if clk'event and clk = '1' then
 		-- horizontal counts from 0 to 799
-			hcount_s <= hcount_s+1;
+			hcount_s <= hcount_s + 1;
 			hsync_s <= '0';
 			vsync_s <= '0';
 
-			if (hcount_s = 800) then
+			if (hcount_s = 799) then
 				vcount_s <= vcount_s+1;
-				hcount_s <= 0;
+				hcount_s <= "0000000000";
 			end if;
 		
 		-- vertical counts from 0 to 524
-			if (vcount_s = 525) then
-				vcount_s <= 0;
+			if (vcount_s = 524) then
+				vcount_s <= "0000000000";
 			end if;
 			
-			if (hcount_s < 96) then
+			if (to_integer(unsigned(hcount_s)) < 96) then
 				hsync_s <= '1';
-			else
-				hsync_s <= '0';
 			end if;
 			
-			if (vcount_s < 2) then
+			if (to_integer(unsigned(vcount_s)) < 2) then
 				vsync_s <= '1';
-			else
-				vsync_s <= '0';
 			end if;
 			
-			
+			hsync <= hsync_s;
+			vsync <= vsync_s;
+			hcount <= hcount_s;
+			vcount <= vcount_s;
 			
 		end if;
 	end process;
-
-	hsync <= hsync_s;
-	vsync <= vsync_s;
-	hcount <= hcount_s;
-	vcount <= vcount_s;
-
 
 end Behavioral;
 

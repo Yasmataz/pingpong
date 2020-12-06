@@ -43,17 +43,20 @@ ARCHITECTURE behavior OF RGB_test IS
     PORT(
          clk : IN  std_logic;
 			SW : in  STD_LOGIC_VECTOR (3 downto 0);
-         vsync : OUT  std_logic;
-         hsync : OUT  std_logic;
-         vcount : OUT  integer;
-         hcount : OUT  integer;
-         R : OUT  std_logic_vector(7 downto 0);
-         G : OUT  std_logic_vector(7 downto 0);
-         B : OUT  std_logic_vector(7 downto 0);
+			DAC_CLK : out std_logic;
+         V : OUT  std_logic;
+         H : OUT  std_logic;
+         vcount : out std_logic_vector(9 downto 0);
+         hcount : out std_logic_vector(9 downto 0);
+         Rout : OUT  std_logic_vector(7 downto 0);
+         Gout : OUT  std_logic_vector(7 downto 0);
+         Bout : OUT  std_logic_vector(7 downto 0);
 			ball_left : out integer;
 			ball_right : out integer;
 			ball_top : out integer;
 			ball_bottom : out integer;
+			paddle1_top : out integer;
+			paddle1_bottom : out integer;
 			refresh_out : out std_logic
         );
     END COMPONENT;
@@ -61,20 +64,23 @@ ARCHITECTURE behavior OF RGB_test IS
 
    --Inputs
    signal clk : std_logic := '0';
-	signal sw : std_logic_vector (3 downto 0);
+	signal sw : std_logic_vector (3 downto 0) := "0001";
 
  	--Outputs
-   signal vsync : std_logic;
-   signal hsync : std_logic;
-   signal vcount : integer;
-   signal hcount : integer;
-   signal R : std_logic_vector(7 downto 0);
-   signal G : std_logic_vector(7 downto 0);
-   signal B : std_logic_vector(7 downto 0);
+   signal V : std_logic;
+   signal H : std_logic;
+	signal DAC_CLK :  std_logic;
+   signal vcount : std_logic_vector(9 downto 0);
+   signal hcount : std_logic_vector(9 downto 0);
+   signal Rout : std_logic_vector(7 downto 0);
+   signal Gout : std_logic_vector(7 downto 0);
+   signal Bout : std_logic_vector(7 downto 0);
 	signal ball_left : integer;
 	signal ball_right : integer;
 	signal ball_top : integer;
 	signal ball_bottom : integer;
+	signal paddle1_top : integer;
+	signal paddle1_bottom : integer;
 	signal refresh_out : std_logic;
 	
    -- Clock period definitions
@@ -86,17 +92,20 @@ BEGIN
    uut: RGBGen PORT MAP (
           clk => clk,
 			 sw => sw,
-          vsync => vsync,
-          hsync => hsync,
+			 DAC_CLK => DAC_CLK,
+          V => V,
+          H => H,
           vcount => vcount,
           hcount => hcount,
-          R => R,
-          G => G,
-          B => B,
+          Rout => Rout,
+          Gout => Gout,
+          Bout => Bout,
 			 ball_left => ball_left,
 			 ball_right => ball_right,
 			 ball_top => ball_top,
 			 ball_bottom => ball_bottom,
+			 paddle1_top => paddle1_top,
+			 paddle1_bottom => paddle1_bottom,
 			 refresh_out => refresh_out
         );
 

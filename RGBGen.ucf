@@ -1,10 +1,10 @@
 # 50 MHz input clock.
-#NET "clk" LOC = "c9";
+NET "clk" LOC = "c9";
 # Synchronization signals.
 #NET "H" LOC = "c5";
 #NET "V" LOC = "d5";
 ## Pixel clock for the video DAC.
-#NET "DAC_CLK" LOC = "a4";
+NET "DAC_CLK" LOC = "a4";
 ## Blue channel pins.
 #NET "Bout<7>" LOC = "b16";
 #NET "Bout<6>" LOC = "a16";

@@ -1,0 +1,3 @@
+vhdl work "clock_divider.vhd"
+vhdl work "refreshClk.vhd"
+vhdl work "refresh_test.vhd"

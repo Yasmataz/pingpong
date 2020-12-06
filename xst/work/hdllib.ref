@@ -1,14 +1,17 @@
-EN vgacontroller NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd sub00/vhpl06 1606546644
-EN refreshclk NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd sub00/vhpl12 1606546646
+EN vgacontroller NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd sub00/vhpl06 1607291107
+EN refreshclk NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd sub00/vhpl12 1607291109
 AR vsynccounter behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/vsyncCounter.vhd sub00/vhpl05 1606417717
+AR vgacontroller behavior C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd sub00/vhpl14 1607106394
+AR clock_divider behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/clock_divider.vhd sub00/vhpl16 1607144842
+EN clock_divider NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/clock_divider.vhd sub00/vhpl15 1607144841
 EN hsynccounter NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/hsyncCounter.vhd sub00/vhpl02 1606417714
-EN rgbgen NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.vhd sub00/vhpl10 1606546648
+EN rgbgen NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.vhd sub00/vhpl10 1607291111
 AR clockgen behavioral "G:/1. School Files/Ryerson/COE758 Workspace/VGA/ClockGen.vhd" sub00/vhpl01 1415573006
 EN vgasync NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGASync.vhd sub00/vhpl08 1606417718
 AR hsynccounter behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/hsyncCounter.vhd sub00/vhpl03 1606417715
-AR vgacontroller behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd sub00/vhpl07 1606546645
+AR vgacontroller behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd sub00/vhpl07 1607291108
 EN clockgen NULL "G:/1. School Files/Ryerson/COE758 Workspace/VGA/ClockGen.vhd" sub00/vhpl00 1415573005
 EN vsynccounter NULL C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/vsyncCounter.vhd sub00/vhpl04 1606417716
 AR vgasync behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGASync.vhd sub00/vhpl09 1606417719
-AR refreshclk behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd sub00/vhpl13 1606546647
-AR rgbgen behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.vhd sub00/vhpl11 1606546649
+AR refreshclk behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd sub00/vhpl13 1607291110
+AR rgbgen behavioral C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.vhd sub00/vhpl11 1607291112

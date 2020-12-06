@@ -4,26 +4,29 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.18 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling vhdl file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/clock_divider.vhd" in Library work.
+Entity <clock_divider> compiled.
+Entity <clock_divider> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd" in Library work.
 Entity <refreshclk> compiled.
 Entity <refreshclk> (Architecture <behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.30 secs
+Total CPU time to Xst completion: 0.38 secs
  
 --> 
 

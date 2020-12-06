@@ -1,21 +1,28 @@
-Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGA_test_isim_beh.exe -prj C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGA_test_beh.prj work.VGA_test 
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGB_test_isim_beh.exe -prj C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGB_test_beh.prj work.RGB_test 
 ISim O.87xd (signature 0xc3576ebc)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/clock_divider.vhd" into library work
 Parsing VHDL file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGAController.vhd" into library work
-Parsing VHDL file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGA_test.vhd" into library work
+Parsing VHDL file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refreshClk.vhd" into library work
+Parsing VHDL file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGBGen.vhd" into library work
+Parsing VHDL file "C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGB_test.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package numeric_std
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity VGAController [vgacontroller_default]
-Compiling architecture behavior of entity vga_test
+Compiling architecture behavioral of entity clock_divider [clock_divider_default]
+Compiling architecture behavioral of entity refreshClk [refreshclk_default]
+Compiling architecture behavioral of entity RGBGen [rgbgen_default]
+Compiling architecture behavior of entity rgb_test
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 7 VHDL Units
-Built simulation executable C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGA_test_isim_beh.exe
-Fuse Memory Usage: 33500 KB
-Fuse CPU Usage: 546 ms
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 14 VHDL Units
+Built simulation executable C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/RGB_test_isim_beh.exe
+Fuse Memory Usage: 36828 KB
+Fuse CPU Usage: 686 ms

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-11-28T13:47:08</DateModified>
+  <DateModified>2020-12-04T13:11:58</DateModified>
   <ModuleName>RGBGen</ModuleName>
   <SummaryTimeStamp>2020-11-27T18:44:32</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/iseconfig/RGBGen.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master\</ImplementationReportsDirectory>
   <DateInitialized>2020-11-26T16:14:08</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

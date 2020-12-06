@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   19:56:31 11/26/2020
+-- Create Date:   00:05:23 12/05/2020
 -- Design Name:   
 -- Module Name:   C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/refresh_test.vhd
 -- Project Name:  VGA
@@ -42,6 +42,7 @@ ARCHITECTURE behavior OF refresh_test IS
     COMPONENT refreshClk
     PORT(
          clk : IN  std_logic;
+         p_clk : IN  std_logic;
          rcount : OUT  integer;
          rclk : OUT  std_logic
         );
@@ -50,6 +51,7 @@ ARCHITECTURE behavior OF refresh_test IS
 
    --Inputs
    signal clk : std_logic := '0';
+   signal p_clk : std_logic := '0';
 
  	--Outputs
    signal rcount : integer;
@@ -57,13 +59,15 @@ ARCHITECTURE behavior OF refresh_test IS
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
+   constant p_clk_period : time := 20 ns;
    constant rclk_period : time := 10 ns;
  
 BEGIN
- 
+  
 	-- Instantiate the Unit Under Test (UUT)
    uut: refreshClk PORT MAP (
           clk => clk,
+          p_clk => p_clk,
           rcount => rcount,
           rclk => rclk
         );
@@ -75,6 +79,14 @@ BEGIN
 		wait for clk_period/2;
 		clk <= '1';
 		wait for clk_period/2;
+   end process;
+ 
+   p_clk_process :process
+   begin
+		p_clk <= '0';
+		wait for p_clk_period/2;
+		p_clk <= '1';
+		wait for p_clk_period/2;
    end process;
  
    rclk_process :process
@@ -90,7 +102,7 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      --wait for 100 ns;	
+      wait for 100 ns;	
 
       wait for clk_period*10;
 

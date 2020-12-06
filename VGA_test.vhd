@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   15:19:20 11/26/2020
+-- Create Date:   13:47:19 12/04/2020
 -- Design Name:   
 -- Module Name:   C:/Users/Yasamin/Documents/Classes/COE758/Spartan3E-master/VGA_test.vhd
 -- Project Name:  VGA
@@ -44,8 +44,8 @@ ARCHITECTURE behavior OF VGA_test IS
 		clk : in std_logic;
 		vsync : out std_logic;
 		hsync : out std_logic;
-		vcount : out integer;
-		hcount : out integer
+		vcount : out std_logic_vector(9 downto 0);
+		hcount : out std_logic_vector(9 downto 0)
 		);
     END COMPONENT;
     
@@ -54,10 +54,10 @@ ARCHITECTURE behavior OF VGA_test IS
    signal clk : std_logic := '0';
 
  	--Outputs
-	signal hsync : std_logic;
-	signal vsync : std_logic;
-   signal vcount : integer;
-   signal hcount : integer;
+   signal vsync : std_logic;
+   signal hsync : std_logic;
+   signal vcount : std_logic_vector(9 downto 0);
+   signal hcount : std_logic_vector(9 downto 0);
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
@@ -67,8 +67,8 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: VGAController PORT MAP (
           clk => clk,
-			 vsync => vsync,
-			 hsync => hsync,
+          vsync => vsync,
+          hsync => hsync,
           vcount => vcount,
           hcount => hcount
         );
@@ -89,7 +89,7 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
-      wait for clk_period*1000;
+      wait for clk_period*10;
 
       -- insert stimulus here 
 

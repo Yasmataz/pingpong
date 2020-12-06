@@ -69,7 +69,9 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="RGBGen_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RGBGen_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="RGBGen_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RGB_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="RGB_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="RGB_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RGB_test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RGB_test_stx_map.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="VGAController.bld"/>
@@ -94,6 +96,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="VGAController.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="VGAController_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="VGAController_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="VGAController_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGAController_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="VGAController_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="VGAController_map.ncd" xil_pn:subbranch="Map"/>
@@ -112,9 +115,7 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="VGASync.stx"/>
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="VGASync.vhi"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="VGASync.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VGA_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="VGA_test_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="VGA_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="VGA_test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -122,6 +123,12 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="clock_divider_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_divider_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_divider_test_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="clock_divider_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="clock_divider_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="clock_divider_test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="hsyncCounter.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="hsyncCounter.stx"/>
@@ -134,7 +141,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="refreshClk.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="refreshClk.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="refreshClk.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="refresh_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="refresh_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="refresh_test_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="refresh_test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vsyncCounter.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="vsyncCounter.stx"/>
@@ -151,22 +160,23 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1606685525" xil_pn:in_ck="9205777128955313339" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1606685525">
+    <transform xil_pn:end_ts="1607292720" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1607292720">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ClockGen.vhd"/>
       <outfile xil_pn:name="RGBGen.vhd"/>
       <outfile xil_pn:name="RGB_test.vhd"/>
       <outfile xil_pn:name="VGAController.vhd"/>
       <outfile xil_pn:name="VGA_test.vhd"/>
+      <outfile xil_pn:name="clock_divider.vhd"/>
+      <outfile xil_pn:name="clock_divider_test.vhd"/>
       <outfile xil_pn:name="refreshClk.vhd"/>
       <outfile xil_pn:name="refresh_test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1606684971" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5106159857452450029" xil_pn:start_ts="1606684971">
+    <transform xil_pn:end_ts="1607291183" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4570680428561054864" xil_pn:start_ts="1607291183">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1606684971" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4245792225470612437" xil_pn:start_ts="1606684971">
+    <transform xil_pn:end_ts="1607291183" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5328188890614043278" xil_pn:start_ts="1607291183">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -174,31 +184,37 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1606685528" xil_pn:in_ck="9205777128955313339" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1606685528">
+    <transform xil_pn:end_ts="1607292720" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1607292720">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ClockGen.vhd"/>
       <outfile xil_pn:name="RGBGen.vhd"/>
       <outfile xil_pn:name="RGB_test.vhd"/>
       <outfile xil_pn:name="VGAController.vhd"/>
       <outfile xil_pn:name="VGA_test.vhd"/>
+      <outfile xil_pn:name="clock_divider.vhd"/>
+      <outfile xil_pn:name="clock_divider_test.vhd"/>
       <outfile xil_pn:name="refreshClk.vhd"/>
       <outfile xil_pn:name="refresh_test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1606685532" xil_pn:in_ck="9205777128955313339" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3081525842386779240" xil_pn:start_ts="1606685528">
+    <transform xil_pn:end_ts="1607292725" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8007833625385362494" xil_pn:start_ts="1607292720">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="VGA_test_beh.prj"/>
-      <outfile xil_pn:name="VGA_test_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="RGB_test_beh.prj"/>
+      <outfile xil_pn:name="RGB_test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1606685533" xil_pn:in_ck="-7927157778982940878" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1051350942835092361" xil_pn:start_ts="1606685532">
+    <transform xil_pn:end_ts="1607292726" xil_pn:in_ck="8786549415407815239" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5679642581894286205" xil_pn:start_ts="1607292725">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="VGA_test_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="RGB_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -236,22 +252,11 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name=".lso"/>
-      <outfile xil_pn:name="RGBGen.lso"/>
-      <outfile xil_pn:name="RGBGen.ngc"/>
-      <outfile xil_pn:name="RGBGen.ngr"/>
-      <outfile xil_pn:name="RGBGen.prj"/>
-      <outfile xil_pn:name="RGBGen.stx"/>
-      <outfile xil_pn:name="RGBGen.syr"/>
-      <outfile xil_pn:name="RGBGen.xst"/>
-      <outfile xil_pn:name="RGBGen_vhdl.prj"/>
-      <outfile xil_pn:name="RGBGen_xst.xrpt"/>
-      <outfile xil_pn:name="VGAController.ngr"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1606520610" xil_pn:in_ck="3908505329227425" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="9185196977239588109" xil_pn:start_ts="1606520610">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -264,12 +269,11 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RGBGen.bld"/>
-      <outfile xil_pn:name="RGBGen.ngd"/>
-      <outfile xil_pn:name="RGBGen_ngdbuild.xrpt"/>
-      <outfile xil_pn:name="_ngo"/>
-      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1606520630" xil_pn:in_ck="7397309958976293382" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1606520619">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -277,16 +281,10 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RGBGen.pcf"/>
-      <outfile xil_pn:name="RGBGen_map.map"/>
-      <outfile xil_pn:name="RGBGen_map.mrp"/>
-      <outfile xil_pn:name="RGBGen_map.ncd"/>
-      <outfile xil_pn:name="RGBGen_map.ngm"/>
-      <outfile xil_pn:name="RGBGen_map.xrpt"/>
-      <outfile xil_pn:name="RGBGen_summary.xml"/>
-      <outfile xil_pn:name="RGBGen_usage.xml"/>
-      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1606520671" xil_pn:in_ck="-5675042418095485544" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1606520630">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -294,27 +292,20 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RGBGen.ncd"/>
-      <outfile xil_pn:name="RGBGen.pad"/>
-      <outfile xil_pn:name="RGBGen.par"/>
-      <outfile xil_pn:name="RGBGen.ptwx"/>
-      <outfile xil_pn:name="RGBGen.unroutes"/>
-      <outfile xil_pn:name="RGBGen.xpi"/>
-      <outfile xil_pn:name="RGBGen_pad.csv"/>
-      <outfile xil_pn:name="RGBGen_pad.txt"/>
-      <outfile xil_pn:name="RGBGen_par.xrpt"/>
-      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1606520671" xil_pn:in_ck="5350964100594539390" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1606520666">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="RGBGen.twr"/>
-      <outfile xil_pn:name="RGBGen.twx"/>
-      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

@@ -1,0 +1,5 @@
+vhdl work "clock_divider.vhd"
+vhdl work "VGAController.vhd"
+vhdl work "refreshClk.vhd"
+vhdl work "RGBGen.vhd"
+vhdl work "RGB_test.vhd"
