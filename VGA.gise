@@ -208,12 +208,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1607292726" xil_pn:in_ck="8786549415407815239" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5679642581894286205" xil_pn:start_ts="1607292725">
+    <transform xil_pn:end_ts="1607293259" xil_pn:in_ck="8786549415407815239" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2963500450891348977" xil_pn:start_ts="1607293259">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="RGB_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
