@@ -50,10 +50,24 @@ architecture Behavioral of VGAController is
 	signal hsync_s : std_logic := '1';
 	signal vsync_s : std_logic := '1';	
 	
-begin 
-process (clk)
+	signal pixel_clk : std_logic := '0';
+
+	component clock_divider
+		 Port ( clk : in  STD_LOGIC;
+				  p_clk : out  STD_LOGIC);
+	end component;
+
+begin
+
+DAC_clock : clock_divider
+PORT MAP (
+		clk => clk,
+		p_clk => pixel_clk
+	);
+	
+process (pixel_clk)
 	begin
-		if clk'event and clk = '1' then
+		if pixel_clk'event and pixel_clk = '1' then
 		-- horizontal counts from 0 to 799
 			hcount_s <= hcount_s + 1;
 			hsync_s <= '0';
