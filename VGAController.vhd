@@ -83,7 +83,7 @@ process (pixel_clk)
 				vcount_s <= "0000000000";
 			end if;
 			
-			if (to_integer(unsigned(hcount_s)) < 96) then
+			if (to_integer(unsigned(hcount_s)) < 95) then
 				hsync_s <= '1';
 			end if;
 			

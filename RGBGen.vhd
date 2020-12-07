@@ -136,7 +136,6 @@ end component;
 component refreshClk
 	port (
 		clk : in  STD_LOGIC;
-      rcount : out  integer;
       rclk : out  STD_LOGIC
 	);
 end component;
@@ -162,7 +161,6 @@ PORT MAP (
 myRefreshClk : refreshClk
 PORT MAP (
 	clk => clk,
-	rcount => rcount_s,
 	rclk => rclk_s
 );
 	

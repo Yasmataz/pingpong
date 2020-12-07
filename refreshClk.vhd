@@ -31,7 +31,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity refreshClk is
     Port ( clk : in  STD_LOGIC;
-           rcount : out  integer;
            rclk : out  STD_LOGIC);
 end refreshClk;
 
@@ -39,7 +38,7 @@ architecture Behavioral of refreshClk is
 
 signal refresh_clk : std_logic := '0';
 signal pixel_clk : std_logic := '0';
-signal refreshcnt : integer:= 0;
+signal count : integer:= 0;
 
 component clock_divider
     Port ( clk : in  STD_LOGIC;
@@ -57,17 +56,16 @@ PORT MAP (
 process(pixel_clk)
 	begin
 		if pixel_clk='1' then
-			if (refreshcnt >= 416667) then
+			if (count >= 416667) then
 				refresh_clk <= '1';
-				refreshcnt <= 0;
+				count <= 0;
 			else
 				refresh_clk <= '0';
-				refreshcnt <= refreshcnt + 1;
+				count <= count + 1;
 			end if;
 		end if;
 end process;
 
-rcount <= refreshcnt;
 rclk <= refresh_clk;
 
 end Behavioral;

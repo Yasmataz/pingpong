@@ -127,7 +127,7 @@ LAB16:    xsi_set_current_line(86, ng0);
     t4 = *((char **)t2);
     t2 = (t0 + 7120U);
     t20 = ieee_p_1242562249_sub_1657552908_1035706684(IEEE_P_1242562249, t4, t2);
-    t1 = (t20 < 96);
+    t1 = (t20 < 95);
     if (t1 != 0)
         goto LAB18;
 

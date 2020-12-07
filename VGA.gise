@@ -136,7 +136,6 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="hsyncCounter.xst"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="refreshClk.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="refreshClk.stx"/>
@@ -160,7 +159,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607299141" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1607299141">
+    <transform xil_pn:end_ts="1607301968" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1607301968">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="RGBGen.vhd"/>
@@ -176,7 +175,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607291183" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5328188890614043278" xil_pn:start_ts="1607291183">
+    <transform xil_pn:end_ts="1607301903" xil_pn:in_ck="-5939092685393696835" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5328188890614043278" xil_pn:start_ts="1607301901">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -184,7 +183,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607299141" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1607299141">
+    <transform xil_pn:end_ts="1607301968" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1607301968">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="RGBGen.vhd"/>
@@ -196,22 +195,20 @@
       <outfile xil_pn:name="refreshClk.vhd"/>
       <outfile xil_pn:name="refresh_test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1607299147" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8007833625385362494" xil_pn:start_ts="1607299141">
+    <transform xil_pn:end_ts="1607301973" xil_pn:in_ck="4941712346527353096" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8007833625385362494" xil_pn:start_ts="1607301968">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="RGB_test_beh.prj"/>
       <outfile xil_pn:name="RGB_test_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1607299148" xil_pn:in_ck="8786549415407815239" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2963500450891348977" xil_pn:start_ts="1607299147">
+    <transform xil_pn:end_ts="1607301973" xil_pn:in_ck="8786549415407815239" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2963500450891348977" xil_pn:start_ts="1607301973">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="RGB_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1415289069" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1415289069">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -220,6 +217,9 @@
     <transform xil_pn:end_ts="1606424988" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-5846032355868886502" xil_pn:start_ts="1606424988">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1606424988" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1947519894759762593" xil_pn:start_ts="1606424988">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -236,16 +236,19 @@
     <transform xil_pn:end_ts="1415289069" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1415289069">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1606424988" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="701824368433784491" xil_pn:start_ts="1606424988">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1606520434" xil_pn:in_ck="-1144119993495452272" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5113793193818223090" xil_pn:start_ts="1606520421">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
@@ -257,6 +260,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1606520619" xil_pn:in_ck="8099944040481335344" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7023609034480153774" xil_pn:start_ts="1606520610">
